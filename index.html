@@ -16,6 +16,32 @@
         <!-- link css -->
         <link rel="stylesheet" href="assets/css/styles.css">
     <style type="text/css">
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 200px; /* Tamaño inicial del logo */
+  transition: width 0.3s ease;
+}
+
+/* Estilos para cuando el logo esté más grande */
+#logo.enlarged {
+  width: 400px; /* Tamaño del logo cuando esté más grande */
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+	    
 @font-face {
   font-weight: 400;
   font-style:  normal;
