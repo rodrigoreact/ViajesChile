@@ -284,18 +284,15 @@
         </div>
 <script>
 const logo = document.getElementById('logo');
+const destacado = document.getElementById('destacado');
 logo.addEventListener('mouseenter', () => {
 logo.classList.add('enlarged');
+destacado.addEventListener('mouseenter', () => {
+destacado.classList.add('enlarged');	
 });
 
 logo.addEventListener('mouseleave', () => {
 logo.classList.remove('enlarged');
-	
-const destacado = document.getElementById('destacado');
-destacado.addEventListener('mouseenter', () => {
-destacado.classList.add('enlarged');
-});
-
 destacado.addEventListener('mouseleave', () => {
 destacado.classList.remove('enlarged');
 });
