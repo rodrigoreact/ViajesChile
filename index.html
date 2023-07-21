@@ -165,7 +165,7 @@
                 <div class="row">
                     <div class="col-12 col-md-3 my-2">
                         <div class="card border-0 bg-info" style="height: 30rem;">
-                            <img src="assets/img/card1.jpg" class="card-img-top" alt="">
+                            <img id ="destacado" src="assets/img/card1.jpg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title fw-light">Lorem ipsum dolor sit amet</h5>
                                 <p class="card-text fw-light">
@@ -275,13 +275,20 @@
         </div>
 <script>
 const logo = document.getElementById('logo');
-
+const destacado = document.getElementById('destacado');
 logo.addEventListener('mouseenter', () => {
   logo.classList.add('enlarged');
 });
 
 logo.addEventListener('mouseleave', () => {
-  logo.classList.remove('enlarged');
+logo.classList.remove('enlarged');
+
+destacado.addEventListener('mouseenter', () => {
+  destacado.classList.add('enlarged');
+});
+
+destacado.addEventListener('mouseleave', () => {
+destacado.classList.remove('enlarged');
 });
 	
 </script>
