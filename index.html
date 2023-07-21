@@ -29,7 +29,9 @@
   width: 200px; /* Tamaño inicial del logo */
   transition: width 0.3s ease;
 }
-
+#destacado {
+   transition: width 0.3s ease;
+}
 /* Estilos para cuando el logo esté más grande */
 #logo.enlarged {
   width: 400px; /* Tamaño del logo cuando esté más grande */
@@ -41,7 +43,7 @@
 }
 #destacado.enlarged {
   width: 400px; /* Tamaño de destacado cuando esté más grande */
-  z-index: 999;
+  z-index: 1000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -282,16 +284,16 @@
         </div>
 <script>
 const logo = document.getElementById('logo');
-const destacado = document.getElementById('destacado');
 logo.addEventListener('mouseenter', () => {
-  logo.classList.add('enlarged');
+logo.classList.add('enlarged');
 });
 
 logo.addEventListener('mouseleave', () => {
 logo.classList.remove('enlarged');
-
+	
+const destacado = document.getElementById('destacado');
 destacado.addEventListener('mouseenter', () => {
-  destacado.classList.add('enlarged');
+destacado.classList.add('enlarged');
 });
 
 destacado.addEventListener('mouseleave', () => {
